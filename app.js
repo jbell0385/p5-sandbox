@@ -4,11 +4,13 @@ let bubbles = [];
 
 function setup() {
     createCanvas(600, 400);
-    let x = random(width);
-    let y = random(height);
-    let r = random(10, 50);
-    let b = new Bubble(x, y, r);
-    bubbles.push(b);
+    for(let i =0; i<5;i++){
+        let x = random(width);
+        let y = random(height);
+        let r = random(10, 50);
+        let b = new Bubble(x, y, r);
+        bubbles.push(b);
+    }
 }
 
 function draw() {
